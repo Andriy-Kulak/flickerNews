@@ -1,3 +1,6 @@
+/**
+ * Posts mongo schema
+ */
 var mongoose = require('mongoose');
 
 var postSchema = new mongoose.Schema({

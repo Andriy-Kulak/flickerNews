@@ -4,12 +4,14 @@ var app = angular.module('flickerNews', ['ui.router']);
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
 	$stateProvider
+		//home page
 		.state('home', {
 			url: '/home',
 			templateUrl: '/home.html',
 			controller: 'mainCtrl'
 		})
 
+		// posts page displaying comments
 		.state('posts', {
 			url: '/posts/{id}',
 			templateUrl: '/posts.html',
@@ -20,6 +22,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	$urlRouterProvider.otherwise('home');
 }]);
 
+/**
+ * Posts Factory
+ */
 app.factory('postsFactory', [function(){
 	var o = {
 		posts: [

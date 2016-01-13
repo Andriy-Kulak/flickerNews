@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 
-//comments and posts db schema
-mongoose.connect('mongodb://localhost/news');
+
+//comments and posts db schema using mongo labs
+mongoose.connect('mongodb://andrew1620:gatorade1990@ds035735.mongolab.com:35735/practice1');
 require('./models/posts');
 require('./models/comments');
 

@@ -24,23 +24,28 @@ router.get('/posts', function(req, res, next){
 });
 
 // POST Route for a new post
-router.post('/posts/', function(req, res, next){
+router.post('/posts', function(req, res, next){
   var post = new Post(req.body);
 
   post.save(function(err,post){
     if(err) {return next(err);}
+
+    res.json(post);
   });
 });
 
 
 
 // Whenever posts are detected within parameters, they will be loaded from db
-router.param('posts', function(req,res,next,id) {
+router.param('post', function(req,res,next,id) {
   var query = Post.findById(id);
 
   query.exec(function(err, post){
     if (err) { return next(err); }
     if (!post) { return next(new Error("can't find post")); }
+
+    req.post = post;
+    return next();
   });
 
 });
@@ -49,18 +54,20 @@ router.param('posts', function(req,res,next,id) {
 router.param('comment', function(req,res,next,id) {
   var query = Comment.findById(id);
 
-  query.exec(function(err, post){
+  query.exec(function(err, comment){
     if (err) { return next(err); }
-    if (!post) { return next(new Error("can't find comment")); }
-  })
+    if (!comment) { return next(new Error("can't find comment")); }
 
+    req.comment = comment;
+    return next();
+  });
 });
 
 // GET Route gets specific post information by id
-router.get('/posts/:post', function(req, res) {
+router.get('/posts/:post', function(req, res, next) {
 
   //loads all comments for specific post
-  req.posts.populate('comments', function(err,post){
+  req.post.populate('comments', function(err,post){
     res.json(post);
   });
 
@@ -86,7 +93,7 @@ router.put('/posts/:post/comments/:comment/upvote', function(req,res,next){
 });
 
 //PUT Request to update upvote. Remember it is at 0 as a default unless otherwise adjusted
-router.put('/posts/:post/comments', function(req,res,next){
+router.post('/posts/:post/comments', function(req,res,next){
   var comment = new Comment(req.body);
   comment.post = req.post;
 

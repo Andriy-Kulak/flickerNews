@@ -42,7 +42,7 @@
         </span>
     <!-- Link to comments !-->
     <span>
-      <a href="#/posts/{{$index}}">Comments</a>
+      <a href="#/posts/{{post._id}}">Comments</a>
     </span>
   </div>
 
@@ -83,13 +83,30 @@
   <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
     <span class="glyphicon glyphicon-thumbs-up"
           ng-click="incrementUpvotes(comment)"></span>
-    {{comment.upvotes}} - by {{comment.author}}
+    {{comment.upvotes}} - by <a> {{comment.author}} </a>
     <span style="font-size:20px; margin-left:10px;">
       {{comment.body}}
     </span>
   </div>
 </script>
 <!--End posts Page !-->
+
+<!--Start Comments Page !-->
+<script type="text/ng-template" id="/posts.html">
+
+  <!-- post template -->
+
+  <form ng-submit="addComment()"
+        style="margin-top:30px;">
+    <h3>Add a new comment</h3>
+
+    <div class="form-group">
+      <input type="text"  class="form-control"  placeholder="Comment" ng-model="body"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
+  </form>
+</script>
+<!--End Comments Page !-->
 
 </body>
 </html>

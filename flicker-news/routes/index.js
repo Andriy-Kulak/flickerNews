@@ -9,7 +9,7 @@ var Post = mongoose.model('Post');
 var Comment = mongoose.model('Comment');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
@@ -71,7 +71,7 @@ router.get('/posts/:post', function(req, res, next) {
     res.json(post);
   });
 
-  res.json(req.post);
+
 });
 
 //PUT Request to update upvote for post. Remember it is at 0 as a default unless otherwise adjusted
@@ -83,14 +83,6 @@ router.put('/posts/:post/upvote', function(req,res,next){
   })
 });
 
-//PUT Request to update upvote for comment. Remember it is at 0 as a default unless otherwise adjusted
-router.put('/posts/:post/comments/:comment/upvote', function(req,res,next){
-  req.comment.upvote(function(err,comment){
-    if(err) { return next(err); }
-
-    res.json(comment);
-  })
-});
 
 //PUT Request to update upvote. Remember it is at 0 as a default unless otherwise adjusted
 router.post('/posts/:post/comments', function(req,res,next){
@@ -106,6 +98,15 @@ router.post('/posts/:post/comments', function(req,res,next){
 
       res.json(comment);
     })
+  });
+});
+
+//PUT Request to update upvote for comment. Remember it is at 0 as a default unless otherwise adjusted
+router.put('/posts/:post/comments/:comment/upvote', function(req,res,next){
+  req.comment.upvote(function(err,comment){
+    if(err) { return next(err); }
+
+    res.json(comment);
   });
 });
 

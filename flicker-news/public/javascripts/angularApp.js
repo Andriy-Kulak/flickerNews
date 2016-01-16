@@ -42,17 +42,18 @@ app.factory('posts', ['$http', function($http){
 		posts: []
 	};
 
+	// GET request for retrieving a specific post
 	o.get = function(id) {
 		return $http.get('/posts/' + id).then(function(res){
 			return res.data;
-		})
+		});
 	};
 
-	// gets a list of all posts currently stored in db
-	o.getAll = function(post){
+	// GET request for a  list of all posts currently stored in db
+	o.getAll = function(){
 		return $http.get('/posts').success(function(data) {
 			angular.copy(data, o.posts);
-		})
+		});
 	};
 
 	//creating a new post
@@ -79,7 +80,7 @@ app.factory('posts', ['$http', function($http){
 
 	// upvoting a  comment to a particular post
 	o.upvoteComment = function(post, comment) {
-		return $http.put('/posts/' + post._id + '/comments/', comment._id + '/upvote').sucess(function(data){
+		return $http.put('/posts/' + post._id + '/comments/' + comment._id + '/upvote').success(function(data){
 			comment.upvotes +=1;
 		});
 	};

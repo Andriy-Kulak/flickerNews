@@ -1,39 +1,39 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
+var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-
+var passport = require('passport');
 
 
 //comments and posts db schema using mongo labs
 mongoose.connect('mongodb://andrew1620:gatorade1990@ds035735.mongolab.com:35735/practice1');
-require('./models/posts');
-require('./models/comments');
+
+require('./models/postsModel');
+require('./models/commentsModel');
+require('./models/usersModel');
+require('./config/passport');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
-
-var port = 3025;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 
 app.use('/', routes);
-app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -48,7 +48,7 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
-    console.log(err.stack)
+    console.log(err.stack);
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,

@@ -2,21 +2,8 @@
 <head>
   <title>Flicker News</title>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-    <script src="/javascripts/angularApp.js"></script>
-    <script src="/javascripts/angularRoutes.js"></script>
-
-    <script src="/javascripts/services/authFactory.js"></script>
-    <script src="/javascripts/services/postsFactory.js"></script>
-
-    <script src="/javascripts/controllers/authCtrl.js"></script>
-    <script src="/javascripts/controllers/mainCtrl.js"></script>
-    <script src="/javascripts/controllers/navCtrl.js"></script>
-    <script src="/javascripts/controllers/postsCtrl.js"></script>
-
-  <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
 <body ng-app="flickerNews" >
 
@@ -41,162 +28,20 @@
   </div>
 </div>
 
-<!--Home Page !-->
-<script type="text/ng-template" id="/home.html">
+<!--Angular Files!-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="/javascripts/angularApp.js"></script>
+<script src="/javascripts/angularRoutes.js"></script>
 
-  <div class="page-header">
-    <h1>Flicker News</h1>
-  </div>
+<script src="/javascripts/services/authFactory.js"></script>
+<script src="/javascripts/services/postsFactory.js"></script>
 
-  <div ng-repeat="post in posts | orderBy:'-upvotes'">
-        <span class="glyphicon glyphicon-thumbs-up"
-              ng-click="incrementUpvotes(post)"></span>
-    {{post.upvotes}}
-        <span style="font-size:20px; margin-left:10px;">
-          <a ng-show="post.link" href="{{post.link}}">
-            {{post.title}}
-          </a>
-          <span ng-hide="post.link">
-            {{post.title}}
-          </span>
-        </span>
-          <span ng-show="post.author">
-              posted by {{post.author}} |
-          </span>
+<script src="/javascripts/controllers/authCtrl.js"></script>
+<script src="/javascripts/controllers/mainCtrl.js"></script>
+<script src="/javascripts/controllers/navCtrl.js"></script>
+<script src="/javascripts/controllers/postsCtrl.js"></script>
 
-    <!-- Link to comments !-->
-    <span>
-      <a href="#/posts/{{post._id}}">Comments</a>
-    </span>
-  </div>
-
-  <form ng-submit="addPost()"
-        style="margin-top:30px;" ng-show="isLoggedIn()">
-    <h3>Add a new post</h3>
-
-    <div class="form-group">
-      <input type="text"
-             class="form-control"
-             placeholder="Title"
-             ng-model="title"/>
-    </div>
-    <div class="form-group">
-      <input type="text"
-             class="form-control"
-             placeholder="Link"
-             ng-model="link"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Post</button>
-  </form>
-
-  <div ng-hide="isLoggedIn()">
-    <h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can add a post.</h3>
-  </div>
-
-</script>
-<!--End Home Page !-->
-
-<!--Start Comments Page !-->
-<script type="text/ng-template" id="/posts.html">
-
-  <div class="page-header">
-    <h3>
-      <a ng-show="post.link" href="{{post.link}}">
-        {{post.title}}
-      </a>
-        <span ng-hide="post.link">
-          {{post.title}}
-        </span>
-    </h3>
-  </div>
-
-  <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
-      <span class="glyphicon glyphicon-thumbs-up"
-            ng-click="incrementUpvotes(comment)"></span>
-    {{comment.upvotes}} - by <a>{{comment.author}}</a>
-      <span style="font-size:20px; margin-left:10px;">
-        {{comment.body}}
-      </span>
-  </div>
-
-  <form ng-submit="addComment()"
-        style="margin-top:30px;" ng-show="isLoggedIn()">
-    <h3>Add a new comment</h3>
-
-    <div class="form-group">
-      <input type="text"  class="form-control"  placeholder="Comment" ng-model="body"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Post</button>
-  </form>
-
-  <div ng-hide="isLoggedIn()">
-      <h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can comment.</h3>
-  </div>
-
-</script>
-<!--End Comments Page !-->
-
-<!--Begin Register Page!-->
-<script type="text/ng-template" id="/register.html">
-  <div class="page-header">
-    <h1>Flicker News</h1>
-  </div>
-
-  <div ng-show="error" class="alert alert-danger row">
-    <span>{{ error.message }}</span>
-  </div>
-
-  <form ng-submit="register()"
-        style="margin-top:30px;">
-    <h3>Register</h3>
-
-    <div class="form-group">
-      <input type="text"
-             class="form-control"
-             placeholder="Username"
-             ng-model="user.username"/>
-    </div>
-    <div class="form-group">
-      <input type="password"
-             class="form-control"
-             placeholder="Password"
-             ng-model="user.password"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-  </form>
-</script>
-<!--End Register Page!-->
-
-<!--Begin Login Page!-->
-<script type="text/ng-template" id="/login.html">
-  <div class="page-header">
-    <h1>Flicker News</h1>
-  </div>
-
-  <div ng-show="error" class="alert alert-danger row">
-    <span>{{ error.message }}</span>
-  </div>
-
-  <form ng-submit="logIn()"
-        style="margin-top:30px;">
-    <h3>Log In</h3>
-
-    <div class="form-group">
-      <input type="text"
-             class="form-control"
-             placeholder="Username"
-             ng-model="user.username"/>
-    </div>
-    <div class="form-group">
-      <input type="password"
-             class="form-control"
-             placeholder="Password"
-             ng-model="user.password"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
-  </form>
-</script>
-<!--End Login Page!-->
 
 </body>
 </html>

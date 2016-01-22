@@ -5,7 +5,7 @@ angular.module('angularRoutes', ['ui.router'])
 		//home page
 		.state('home', {
 			url: '/home',
-			templateUrl: '/home.html',
+			templateUrl: 'sections/homePage.html',
 			controller: 'mainCtrl',
 			//ensure all the posts are loaded before page is loaded
 			resolve: {
@@ -18,7 +18,7 @@ angular.module('angularRoutes', ['ui.router'])
 		// posts page displaying comments
 		.state('posts', {
 			url: '/posts/{id}',
-			templateUrl: '/posts.html',
+			templateUrl: 'sections/commentsPage.html',
 			controller: 'postsCtrl',
 			//ensure all the comments for specific post are loaded before page is loaded
 			resolve: {
@@ -30,7 +30,7 @@ angular.module('angularRoutes', ['ui.router'])
 
 		.state('login', {
 			url: '/login',
-			templateUrl: '/login.html',
+			templateUrl: 'sections/loginPage.html',
 			controller: 'authCtrl',
 			// quick check if user already logged in, will redirect to home page
 			onEnter: ['$state', 'auth', function($state, auth){
@@ -42,7 +42,7 @@ angular.module('angularRoutes', ['ui.router'])
 
 		.state('register', {
 			url: '/register',
-			templateUrl: '/register.html',
+			templateUrl: 'sections/registerPage.html',
 			controller: 'authCtrl',
 			// quick check if user already logged in, will redirect to home page
 			onEnter: ['$state', 'auth', function($state, auth){
@@ -51,8 +51,6 @@ angular.module('angularRoutes', ['ui.router'])
 				}
 			}]
 		});
-
-
 
 
 	$urlRouterProvider.otherwise('home');

@@ -19,7 +19,7 @@ var auth = jwt({ secret: 'SECRET', userProperty: 'payload'});
 
 // GET home page
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('../public/index', { title: 'Express' });
 });
 
 

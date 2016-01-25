@@ -3,10 +3,16 @@
 		<h1>Flicker News</h1>
 	</div>
 
-	<div ng-repeat="post in posts | orderBy:'-upvotes'">
+
+
+	<div class="row" ng-repeat="post in posts | orderBy:'-upvotes'">
+		<div class="col-md-8">
         <span class="glyphicon glyphicon-thumbs-up"
 							ng-click="incrementUpvotes(post)"></span>
-		{{post.upvotes}}
+							{{post.upvotes}}
+        <span class="glyphicon glyphicon-thumbs-down"
+            ng-click="incrementDownvotes(post)"></span>
+
         <span style="font-size:20px; margin-left:10px;">
           <a ng-show="post.link" href="{{post.link}}">
 						{{post.title}}
@@ -15,15 +21,25 @@
             {{post.title}}
           </span>
         </span>
+		</div>
+
+		<div class="col-md-3">
           <span ng-show="post.author">
               posted by {{post.author}} |
           </span>
+    </div>
 
-		<!-- Link to comments !-->
-    <span>
-      <a href="#/posts/{{post._id}}">Comments</a>
-    </span>
+    <div class="col-md-1">
+			<!-- Link to comments !-->
+			<span>
+				<a href="#/posts/{{post._id}}">Comments</a>
+			</span>
+		</div>
 	</div>
+
+
+
+
 
 	<form ng-submit="addPost()"
 				style="margin-top:30px;" ng-show="isLoggedIn()">
@@ -47,6 +63,7 @@
 	<div ng-hide="isLoggedIn()">
 		<h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can add a post.</h3>
 	</div>
+
 
 
 <!--End Home Page !-->

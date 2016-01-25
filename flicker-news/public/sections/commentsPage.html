@@ -1,7 +1,6 @@
 
 <!--Start Comments Page !-->
 
-
 	<div class="page-header">
 		<h3>
 			<a ng-show="post.link" href="{{post.link}}">
@@ -16,7 +15,10 @@
 	<div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
       <span class="glyphicon glyphicon-thumbs-up"
             ng-click="incrementUpvotes(comment)"></span>
-		{{comment.upvotes}} - by <a>{{comment.author}}</a>
+		{{comment.upvotes}}
+		      <span class="glyphicon glyphicon-thumbs-down"
+								ng-click="incrementDownvotes(comment)"></span>
+		- by <a>{{comment.author}}</a>
       <span style="font-size:20px; margin-left:10px;">
         {{comment.body}}
       </span>

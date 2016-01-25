@@ -26,4 +26,8 @@ angular.module('postsCtrl', []).controller('postsCtrl', ['$scope', 'posts', 'pos
 		posts.upvoteComment(post, comment);
 	}
 
+	$scope.incrementDownvotes = function(comment) {
+		posts.downvoteComment(post, comment);
+	}
+
 }]);

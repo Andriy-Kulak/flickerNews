@@ -94,6 +94,15 @@ router.put('/posts/:post/upvote', auth, function(req,res,next){
   });
 });
 
+//PUT Request to update downvote for post. Remember it is at 0 as a default unless otherwise adjusted
+router.put('/posts/:post/upvote', auth, function(req,res,next){
+  req.post.downvote(function(err,post){
+    if(err) { return next(err); }
+
+    res.json(post);
+  });
+});
+
 
 //POST request to create a new comment
 router.post('/posts/:post/comments', auth, function(req,res,next){
@@ -115,12 +124,22 @@ router.post('/posts/:post/comments', auth, function(req,res,next){
 
 //PUT Request to update upvote for comment. Remember it is at 0 as a default unless otherwise adjusted
 router.put('/posts/:post/comments/:comment/upvote', auth, function(req,res,next){
-  req.comment.upvote(function(err,comment){
+  req.comment.upvoteComment(function(err,comment){
     if(err) { return next(err); }
 
     res.json(comment);
   });
 });
+
+//PUT Request to update downvoting for comment. Remember it is at 0 as a default unless otherwise adjusted
+router.put('/posts/:post/comments/:comment/upvote', auth, function(req,res,next){
+  req.comment.downvoteComment(function(err,comment){
+    if(err) { return next(err); }
+
+    res.json(comment);
+  });
+});
+
 
 
 //POST Request for logging in user
@@ -151,6 +170,7 @@ router.post('/register', function(req, res, next){
   }
 
   var user = new User();
+
 
   user.username = req.body.username;
 

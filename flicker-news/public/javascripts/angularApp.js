@@ -15,4 +15,5 @@ angular.module('flickerNews', [
 	'authCtrl',
 	'postsCtrl',
 	'navCtrl'
+
 ]);

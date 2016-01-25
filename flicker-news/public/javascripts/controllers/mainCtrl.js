@@ -28,4 +28,8 @@ angular.module('mainCtrl',[]).controller('mainCtrl', ['$scope', 'posts', 'auth',
 	$scope.incrementUpvotes = function(post){
 		posts.upvote(post);
 	}
+
+	$scope.incrementDownvotes = function(post){
+		posts.downvote(post);
+	}
 }]);

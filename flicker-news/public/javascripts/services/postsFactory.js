@@ -30,14 +30,21 @@ angular.module('postsFactory', []).factory('posts', ['$http', 'auth', function($
 		});
 	};
 
-
-
 	// upvoting a post
 	obj.upvote = function(post) {
 		return $http.put('/posts/' + post._id + '/upvote', null, {
 			headers: {Authorization: 'Bearer ' + auth.getToken()}
 		}).success(function (data) {
 			post.upvotes += 1;
+		});
+	};
+
+	// downvoting a post
+	obj.downvote = function(post) {
+		return $http.put('/posts/' + post._id + '/upvote', null, {
+			headers: {Authorization: 'Bearer ' + auth.getToken()}
+		}).success(function (data) {
+			post.upvotes -= 1;
 		});
 	};
 
@@ -55,6 +62,15 @@ angular.module('postsFactory', []).factory('posts', ['$http', 'auth', function($
 			headers: {Authorization: 'Bearer ' + auth.getToken()}
 		}).success(function(data){
 			comment.upvotes +=1;
+		});
+	};
+
+	//downvoting a comment
+	obj.downvoteComment = function(post, comment) {
+		return $http.put('/posts/' + post._id + '/comments/' + comment._id + '/upvote', null, {
+			headers: {Authorization: 'Bearer ' + auth.getToken()}
+		}).success(function(data){
+			comment.upvotes -=1;
 		});
 	};
 

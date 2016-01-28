@@ -1,5 +1,5 @@
 /**
- * Auth Factory
+ * Auth Factory for logining in and registering
  */
 angular.module('authFactory',[]).factory('auth', ['$http', '$window', '$rootScope', function($http, $window, $rootScope){
 	var auth = {

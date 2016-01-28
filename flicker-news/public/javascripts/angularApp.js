@@ -10,10 +10,14 @@ angular.module('flickerNews', [
 	'postsFactory',
 	'authFactory',
 
+	//directives
+	'passConfirmDirective',
+
 	//controllers
 	'mainCtrl',
 	'authCtrl',
 	'postsCtrl',
 	'navCtrl'
+
 
 ]);

@@ -25,8 +25,18 @@
       <file leaf-file-name="registerPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/registerPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.42857143">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.142857">
+              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backButtonDirective.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/directives/backButtonDirective.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -62,16 +72,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postsCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/postsCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="usersModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/models/usersModel.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,16 +102,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flicker-news/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="postsFactory.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/services/postsFactory.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,8 +115,8 @@
       <file leaf-file-name="homePage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/homePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.30612245">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.6122449">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -135,8 +125,28 @@
       <file leaf-file-name="commentsPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/commentsPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state vertical-scroll-proportion="-6.9591837">
+              <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutPage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/aboutPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16908212">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,18 +155,18 @@
       <file leaf-file-name="loginPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/loginPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9183673">
+            <state vertical-scroll-proportion="-0.30612245">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.13255033">
-              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+            <state vertical-scroll-proportion="-7.6530614">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -165,28 +175,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flicker-news/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.8">
-              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/mainCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/navCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.2">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -206,7 +196,17 @@
         <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/mainCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -216,7 +216,7 @@
         <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -254,25 +254,27 @@
         <option value="$PROJECT_DIR$/flicker-news/public/sections/commentsPage.ejs" />
         <option value="$PROJECT_DIR$/flicker-news/public/sections/registerPage.ejs" />
         <option value="$PROJECT_DIR$/flicker-news/public/sections/loginPage.ejs" />
-        <option value="$PROJECT_DIR$/flicker-news/public/javascripts/angularRoutes.js" />
         <option value="$PROJECT_DIR$/flicker-news/app.js" />
         <option value="$PROJECT_DIR$/flicker-news/views/index.ejs" />
         <option value="$PROJECT_DIR$/flicker-news/bin/www" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/directives/backDirective.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/controllers/postsCtrl.js" />
-        <option value="$PROJECT_DIR$/flicker-news/public/sections/commentsPage.html" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/controllers/mainCtrl.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/fbLogin/fb.js" />
         <option value="$PROJECT_DIR$/flicker-news/routes/index.js" />
-        <option value="$PROJECT_DIR$/flicker-news/public/javascripts/angularApp.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/directives/passConfirmDirective.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/services/authFactory.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/javascripts/services/postsFactory.js" />
-        <option value="$PROJECT_DIR$/flicker-news/public/sections/registerPage.html" />
         <option value="$PROJECT_DIR$/flicker-news/public/sections/loginPage.html" />
         <option value="$PROJECT_DIR$/flicker-news/public/sections/homePage.html" />
-        <option value="$PROJECT_DIR$/flicker-news/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/flicker-news/public/sections/registerPage.html" />
+        <option value="$PROJECT_DIR$/flicker-news/public/javascripts/angularApp.js" />
+        <option value="$PROJECT_DIR$/flicker-news/public/javascripts/directives/backButtonDirective.js" />
+        <option value="$PROJECT_DIR$/flicker-news/public/sections/commentsPage.html" />
+        <option value="$PROJECT_DIR$/flicker-news/public/javascripts/angularRoutes.js" />
         <option value="$PROJECT_DIR$/flicker-news/public/index.ejs" />
+        <option value="$PROJECT_DIR$/flicker-news/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/flicker-news/public/sections/aboutPage.html" />
       </list>
     </option>
   </component>
@@ -901,12 +903,12 @@
       <workItem from="1452482671460" duration="34045000" />
       <workItem from="1453087326604" duration="8493000" />
       <workItem from="1453176567645" duration="2796000" />
-      <workItem from="1453433633814" duration="38340000" />
+      <workItem from="1453433633814" duration="42752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108322000" />
+    <option name="totallyTimeSpent" value="112734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="29" width="1363" height="808" extended-state="0" />
@@ -1206,14 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/mainCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/postsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1234,14 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.892857">
           <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1278,14 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/services/authFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1310,42 +1288,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/loginPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9183673">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/homePage.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.30612245">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.8">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/registerPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42857143">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/commentsPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1358,10 +1312,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/directives/backButtonDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/homePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6122449">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/controllers/mainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/javascripts/angularRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/commentsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9591837">
+          <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flicker-news/public/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13255033">
-          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        <state vertical-scroll-proportion="-7.6530614">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.2">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/registerPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.142857">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flicker-news/public/sections/aboutPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16908212">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>

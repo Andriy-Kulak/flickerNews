@@ -46,3 +46,15 @@ nav > ul > li > a {
   letter-spacing: 2px;
 
 }
+.blueColor{
+  color: #3399ff;
+}
+
+.flickerFont {
+  font-family: 'Courier New',sans-serif;
+}
+
+.flickerHeader {
+  text-decoration: underline #3399ff line-through;
+
+}

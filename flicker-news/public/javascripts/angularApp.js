@@ -12,6 +12,7 @@ angular.module('flickerNews', [
 
 	//directives
 	'passConfirmDirective',
+	'backButtonDirective',
 
 	//controllers
 	'mainCtrl',

@@ -50,6 +50,13 @@ angular.module('angularRoutes', ['ui.router'])
 					$state.go('home');
 				}
 			}]
+		})
+
+		.state('about', {
+			url: '/about',
+			templateUrl: 'sections/aboutPage.html',
+			controller: 'mainCtrl'
+
 		});
 
 

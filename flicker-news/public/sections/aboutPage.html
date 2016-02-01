@@ -1,0 +1,10 @@
+<div class="jumbotron" ng-controller="navCtrl">
+  <h2 class="flickerHeader flickerFont"><u>About Flicker News:</u></h2>
+  <p class="lead">
+    We are a news website where registered community members can submit content, such as text posts or direct links,
+    making it essentially an online bulletin board system. Registered users can then vote submissions up or down
+    to organize the posts and determine their position on the site's pages.
+  </p>
+<p><a class="btn btn-lg btn-primary" href="#/register" role="button" ng-hide="isLoggedIn()">Sign up today</a></p>
+<p ng-show="isLoggedIn()" class="blueColor flickerFont"><u>Thank you for being our valued member!</u> :-)</p>
+</div>
